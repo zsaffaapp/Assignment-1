@@ -12,7 +12,6 @@ $hasil = $conn->query($sql);
         <th>NIM</th>
         <th>Nama</th>
         <th>Alamat</th>
-        <th>Aksi</th>
     <tr>
 
     <?php
@@ -24,17 +23,17 @@ $hasil = $conn->query($sql);
         ?>
         <tr>
         <td><?=$nomor;?></td>
-        <td><?=$row['NIM'];?></td>
-        <td><?=$row['Nama'];?></td>
-        <td><?=$row['Alamat'];?></td>
-        <td>
-            <a href="update.php"></a>
-            <a href="process_delete.php">Hapus</a>
-            </td>
-            </tr>
+        <td><?=$row['nim'];?></td>
+        <td><?=$row['nama'];?></td>
+        <td><?=$row['alamat'];?></td>
 
 <?php
     }
     ?>
     </table>
+
+
+
+
+
 

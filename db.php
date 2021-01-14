@@ -25,15 +25,7 @@ if ($conn->connect_error) {
     die("connection failed : ") . $conn->connect_error;
 }
 
-$sql = "INSERT INTO tbl_mhsw VALUES ('123','Bejo','Ngawi')";
-if ($conn->query($sql)) {
-    echo "data sudah berhasil ditambahkan";
-}
 
-else {
-    die ("error: ". $conn->error );
-
-}
 
 
 ?>
